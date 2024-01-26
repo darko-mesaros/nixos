@@ -120,10 +120,7 @@
   # WORKS:
   # home.file.".tmuxp/nixosvmr".source = ../assets/.tmuxp/nixosvmr.yaml; # with hard-coded hostname
 
-
     programs.zsh = {
-      
-
       enable = true;
     };  # end of ZSH
 
@@ -161,3 +158,4 @@
 
       
     }; # mpv
+}

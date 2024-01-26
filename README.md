@@ -18,7 +18,7 @@ The directory `assets` contain various configuration and binary files I wanted t
 ## Installation
 
 1. Download installer ISO
-    - [https://nixos.org/download.html#nixos-iso]([https://nixos.org/download.html#nixos-iso)
+    - [https://nixos.org/download.html#nixos-iso](https://nixos.org/download.html#nixos-iso)
 2. Install NixOS using that ISO
     - Learn how to set up a USB thumb drive and boot from it for installing the basic OS
 3. Modify default configuration.nix:
@@ -44,8 +44,14 @@ The directory `assets` contain various configuration and binary files I wanted t
         ``` example
         sudo nixos-rebuild switch
         ```
-4. Clone this Git repo to `~/nixos/`: `git clone https://github.com/novoid/nixos-config.git ~/nixos`
-5. Create a configuration for the `$HOSTNAME` in the nixos-configuration git repo
+4. Create a new user and add it to the `wheel` group:
+    ```
+    useradd -c "Darko Mesaros" -m darko
+    usermod -G wheel
+    passwd darko
+    ```
+5. Clone this Git repo to `~/nixos/`: `git clone https://github.com/novoid/nixos-config.git ~/nixos`
+6. Create a configuration for the `$HOSTNAME` in the nixos-configuration git repo
     1. Adapt `flakes.nix`
     2. Create `~/nixos/hosts/$HOSTNAME` (from the `DEFAULT` host as template)
     3. Get the `hardware-configuration.nix` into your new setup
@@ -55,7 +61,7 @@ The directory `assets` contain various configuration and binary files I wanted t
         cp /etc/nixos/configuration.nix ~/nixos/hosts/$HOSTNAME/default.nix
         git add 
         ```
-6. Run flakes with the new setup:
+7. Run flakes with the new setup:
     1. Switch to nixos-config dir
     2. Double-check: make sure that hostname matches a config
     3. Run flakes with current nixos-config dir:
