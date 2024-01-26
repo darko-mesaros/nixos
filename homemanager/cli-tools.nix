@@ -3,7 +3,6 @@
 {
 
     home.packages = with pkgs; [
-
       zsh
       thefuck
       grml-zsh-config
@@ -51,6 +50,8 @@
       mktemp
       pwgen
       inotify-tools
+      zoxide
+      ranger
 
       # backups
       rsnapshot
@@ -91,6 +92,7 @@
       silver-searcher
       ack
       fzf
+      fzf-zsh
       fd  # fd is a simple, fast and user-friendly alternative to find(1).
       findutils
       zsh-z  # https://github.com/agkozak/zsh-z -> "Zsh-z is a native Zsh port of rupa/z, a tool written for bash and Zsh that uses embedded awk scripts to do the heavy lifting."
@@ -110,7 +112,6 @@
       ocrmypdf
       yt-dlp
       youtube-dl
-      jq ## used for yth.sh
       magic-wormhole
       pdfminer  # e.g. for pdf2txt dumppdf
       qpdf  # e.g. splitting pdf files

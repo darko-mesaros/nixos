@@ -41,6 +41,7 @@
       git
       # thanks to StellyUK
       ncdu
+      openssl
     ];
   };
 

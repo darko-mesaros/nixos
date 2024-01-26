@@ -66,7 +66,14 @@ alias cd="z"
 alias cdi="zi"
 alias zshedit="vim /home/darko/.zshrc"
 
+# FZF
+## Github install:
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+## NixOS:
+if [ -n "${commands[fzf-share]}" ]; then
+  source "$(fzf-share)/key-bindings.zsh"
+fi
 
 ## Needs Figlet and lolcat
 function lolbanner {
@@ -77,12 +84,6 @@ function lolbanner {
 function cht {
   curl cheat.sh/$@ | bat
 }
-
-# PYENV
-#export PYENV_ROOT="$HOME/.pyenv"
-#command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-#source /usr/share/nvm/init-nvm.sh
 
 ### NNN
 export NNN_USE_EDITOR=1
@@ -105,7 +106,5 @@ export NNN_FIFO='/tmp/nnn.fifo'
 export NNN_PLUG='p:preview-tui'
 
 alias nnn="nnn -e"
-
-source /usr/share/nvm/init-nvm.sh
 
 neofetch --off

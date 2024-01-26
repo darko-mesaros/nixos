@@ -87,6 +87,7 @@
                           ./homemanager.nix
 			  ./homemanager/cli-tools.nix
 			  ./homemanager/dotfiles.nix
+			  ./homemanager/dev.nix
                           #./homemanager/qemu-kvm-guest.nix
                       ];
                  };
