@@ -32,6 +32,7 @@
       ncftp
       socat
       cryptsetup
+      lazygit
 
       # NixOS
       nix-index  # "locate/grep" for files in all nix packages

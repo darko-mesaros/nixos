@@ -3,17 +3,17 @@
 {
 
     home.packages = with pkgs; [
-      fnm 			# node version manager
-      rustc			# rust compiler
-      cargo			# rust package manager
-      python311Full		# python 3.11
-      lua			# lua interpreter
-      jq			# json query processor
-      ruby			# ruby
-      gccgo    # gnu compiler collection
-      glibc     # gnu c library
+      fnm                                                 # node version manager
+      rustc			                                          # rust compiler
+      cargo			                                          # rust package manager
+      python311Full		                                    # python 3.11
+      lua			                                            # lua interpreter
+      jq			                                            # json query processor
+      ruby			                                          # ruby
+      gccgo                                               # gnu compiler collection
+      glibc                                               # gnu c library
 
-      # lsp
+      # lsp - mainly for neovim
       asm-lsp                                             # asm_lsp
       nil                                                 # nil_ls
       lua-language-server                                 # lua_ls
@@ -32,6 +32,7 @@
 
       # rust
       bacon
+      clippy
       
       ];
 

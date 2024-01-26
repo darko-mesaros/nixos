@@ -2,21 +2,12 @@ local servers = {
   -- they are nvim lsp servers: 
   -- more info here: 
   -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
---	"lua_ls",
---	"cssls",
---	"html",
---  "tsserver",
---	"pyright",
---  "pylsp",
---  "bashls",
---	"jsonls",
---	"yamlls",
---  "marksman",
---  "clangd",
---  "terraformls",
---  "rust_analyzer",
---  "asm_lsp",
---  "nil_ls",  -- nix
+--  ######## NOTE NOTE NOTE NOTE #######
+-- The servers were removed from here because of the use of NixOS.
+-- In order to use LSPs on NixOS you need to install them via the Nix 
+-- package manager. As Mason cannot install these binaries (and it 
+-- should not install).
+-- This is already fixed in homemanager/dev.nix
 }
 
 local settings = {
