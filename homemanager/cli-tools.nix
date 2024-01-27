@@ -7,6 +7,7 @@
       thefuck
       grml-zsh-config
       htop
+      btop
       dnsutils
       mc  #midnight commander
       nmap
@@ -34,6 +35,9 @@
       cryptsetup
       lazygit
 
+      # net
+      httpie
+
       # NixOS
       nix-index  # "locate/grep" for files in all nix packages
       comma      # temporarily installing packages in current shell
@@ -53,6 +57,7 @@
       inotify-tools
       zoxide
       ranger
+      bat
 
       # backups
       rsnapshot
